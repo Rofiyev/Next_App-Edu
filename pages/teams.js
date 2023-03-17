@@ -11,7 +11,7 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { getDashboardData } from "../Api";
 
-export default function Teams({ teamsData }) {
+function Teams({ teamsData }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);

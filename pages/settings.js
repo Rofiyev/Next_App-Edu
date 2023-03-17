@@ -1,14 +1,11 @@
 import { ThemeProvider, Typography } from "@mui/material";
 import Layout from "../Components/Layout";
-import Dashboard from "../Components/Layout";
-import DashboardMain from "../Components/Main/Dashboard";
 import { theme } from "../Theme/ThemeMode";
 
-export default function Teams() {
+export default function Settings() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        {/* <DashboardMain /> */}
         <Typography variant="h4">Settings</Typography>
       </Layout>
     </ThemeProvider>
