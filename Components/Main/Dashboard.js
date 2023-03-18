@@ -2,7 +2,6 @@ import { Grid, Typography, Box, Stack, Avatar, Button } from "@mui/material";
 import { Bar, Line } from "react-chartjs-2";
 import userImage from "../../Image/userImage.png";
 import { mainInfoCard } from "../../Data";
-import { useEffect, useState } from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -47,8 +46,8 @@ const DashboardMain = ({ data }) => {
             Teams Strength
           </Typography>
           <Bar
-            data={data.teamsStrenght?.data}
-            options={data.teamsStrenght?.options}
+            data={data?.teamsStrenght?.data}
+            options={data?.teamsStrenght?.options}
           />
         </Box>
       </Grid>
@@ -267,8 +266,8 @@ const DashboardMain = ({ data }) => {
             </Stack>
           </Stack>
           <Line
-            data={data.projectDeliveries.data}
-            options={data.projectDeliveries.options}
+            data={data?.projectDeliveries?.data}
+            options={data?.projectDeliveries?.options}
           />
         </Box>
       </Grid>
@@ -293,7 +292,7 @@ const DashboardMain = ({ data }) => {
               View All
             </Button>
           </Stack>
-          {data.notification?.map((item, i) => (
+          {data?.notification?.map((item, i) => (
             <Stack
               key={i}
               sx={{

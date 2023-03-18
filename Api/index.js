@@ -4,17 +4,16 @@ const BASE_URL = "http://localhost:3000/api";
 
 const getDashboardData = async (url) => {
   try {
-    const res = await axios.get(`${BASE_URL}/${url}`);
+    const res = await axios.get(`${BASE_URL}/${url}`, {});
     return res.data;
   } catch (error) {
-    console.log(error);
     return [];
   }
 };
 
 const getTeamData = async (team) => {
   try {
-    const res = await axios.get(`${BASE_URL}/teams/${team}`);
+    const res = await axios.get(`${BASE_URL}/teams/${team}`, {});
     return res.data;
   } catch (error) {
     return [];
