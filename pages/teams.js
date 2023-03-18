@@ -11,7 +11,7 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { getDashboardData } from "../Api";
 
-function Teams({ teamsData }) {
+export default function Teams({ teamsData }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -131,7 +131,7 @@ function Teams({ teamsData }) {
               </Button>
             </Modal.Footer>
           </Modal>
-          {teamsData.map((item, index) => (
+          {teamsData?.map((item, index) => (
             <Grid
               key={index}
               item

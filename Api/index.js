@@ -8,7 +8,7 @@ const getDashboardData = async (url) => {
     return res.data;
   } catch (error) {
     console.log(error);
-    return { status: "error" };
+    return [];
   }
 };
 
@@ -17,7 +17,7 @@ const getTeamData = async (team) => {
     const res = await axios.get(`${BASE_URL}/teams/${team}`);
     return res.data;
   } catch (error) {
-    return { status: "error" };
+    return [];
   }
 };
 
