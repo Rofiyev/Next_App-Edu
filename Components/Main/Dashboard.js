@@ -45,10 +45,10 @@ const DashboardMain = ({ data }) => {
           <Typography sx={{ fontWeight: "bold", mb: 2 }}>
             Teams Strength
           </Typography>
-          <Bar
+          {/* <Bar
             data={data?.teamsStrenght?.data}
             options={data?.teamsStrenght?.options}
-          />
+          /> */}
         </Box>
       </Grid>
       <Grid item xs={12} md={4}>
@@ -265,10 +265,10 @@ const DashboardMain = ({ data }) => {
               <Typography sx={{ color: "#999" }}>🟣 Target</Typography>
             </Stack>
           </Stack>
-          <Line
+          {/* <Line
             data={data?.projectDeliveries?.data}
             options={data?.projectDeliveries?.options}
-          />
+          /> */}
         </Box>
       </Grid>
       <Grid item xs={12} md={4}>
