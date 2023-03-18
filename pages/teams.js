@@ -65,7 +65,7 @@ function Teams({ teamsData }) {
                   component="img"
                   sx={{ width: "100px", height: "100px", borderRadius: "50%" }}
                   image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwq-QgDNZh6feEWndoETeXuE1_TebPF77uhBIRtymuh5ke5E0iq3RiUqkc-R335fN3aVU&usqp=CAU"
-                  alt="green iguana"
+                  alt="Image"
                 />
                 <CardContent sx={{ textAlign: "center" }}>
                   <Typography
