@@ -13,7 +13,8 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { getTeamData } from "../../Api";
 import { useRouter } from "next/router";
 
-export default function TeamsMain({ data }) {
+export default function Home({ data }) {
+  console.log(data);
   const router = useRouter();
   return (
     <ThemeProvider theme={theme}>

@@ -15,13 +15,13 @@ export const navbarData = {
     },
     {
       icon: <GroupsIcon />,
-      text: "Teams",
-      path: "/teams",
+      text: "Employees",
+      path: "/employees",
     },
     {
       icon: <PeopleAltIcon />,
-      text: "Employees",
-      path: "/employees",
+      text: "Teams",
+      path: "/teams",
     },
     {
       icon: <HomeRepairServiceIcon />,

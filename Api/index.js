@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://next-app-edu.vercel.app/api";
+const BASE_URL = "http://localhost:3000/api";
 
 const getDashboardData = async (url) => {
   try {
@@ -13,7 +13,8 @@ const getDashboardData = async (url) => {
 
 const getTeamData = async (team) => {
   try {
-    const res = await axios.get(`${BASE_URL}/teams/${team}`, {});
+    const res = await axios.get(`${BASE_URL}/employees/${team}`, {});
+    console.log(res);
     return res.data;
   } catch (error) {
     return [];
